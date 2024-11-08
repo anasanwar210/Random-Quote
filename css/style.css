@@ -11,12 +11,15 @@
 }
 
 .quotation {
-  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+
+background: url(../images/3.jpg) no-repeat;
+background-size: cover;
+/* background: linear-gradient(135deg, #8e2de2, #4a00e0); */
   font-family: "lato";
 }
 
 .inner {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.6);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   animation: fadeIn 1.5s ease-in-out;
 }
