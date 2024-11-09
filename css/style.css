@@ -11,10 +11,9 @@
 }
 
 .quotation {
-
-background: url(../images/3.jpg) no-repeat;
-background-size: cover;
-/* background: linear-gradient(135deg, #8e2de2, #4a00e0); */
+  background: url(../images/3.jpg) no-repeat;
+  background-size: cover;
+  /* background: linear-gradient(135deg, #8e2de2, #4a00e0); */
   font-family: "lato";
 }
 
@@ -39,8 +38,9 @@ p {
   animation: slideInFromRight 1s ease-in-out;
 }
 
-.quote,.author {
-  font-size: 26px;
+.quote,
+.author {
+  font-size: 25px;
   font-style: italic;
   animation: fadeIn 1s ease-in-out, slideInFromRight 1s ease-in-out;
 }
@@ -48,31 +48,45 @@ p {
 svg {
   font-size: 26px;
   color: #e91e63;
-} 
+  margin-bottom: 7px;
+}
+
+/* #show-quote{
+  position: relative;
+  width: 100%;
+}
+
+#show-quote::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-top: 1px solid #ff4081;
+  border-bottom: 1px solid #ff4081;
+  width: 50%;
+  margin: auto;
+  display: none;
+} */
 
 #show-quote :is(p.quote, p.author) {
   position: relative;
 }
 
-#show-quote p.quote::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  border-top: 1px solid #ff4081;
-  width: 60%;
-  height: auto;
-}
-
+#show-quote p.quote::before,
 #show-quote p.author::after {
   content: "";
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0%;
   border-top: 1px solid #ff4081;
   width: 60%;
+}
+
+#show-quote p.quote::before {
+  top: 0;
+}
+
+#show-quote p.author::after {
+  bottom: 0%;
 }
 
 .author {
@@ -88,7 +102,6 @@ svg {
   font-size: 20px;
   border-radius: 25px;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
   animation: pulse 1.5s infinite;
 }
 .button:hover {
