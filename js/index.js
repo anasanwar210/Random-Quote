@@ -1,6 +1,7 @@
 let showQuote = document.getElementById("show-quote"),
   quote = document.getElementById("quote"),
-  author = document.getElementById("author");
+  author = document.getElementById("author"),
+  numOfQuote = document.getElementById("numOfQuote");
 
 let englishQuotes = [
   {
@@ -44,11 +45,12 @@ function getRandomQuote() {
 
   do {
     randomQuotes = Math.floor(Math.random() * englishQuotes.length);
-      showQuote.style.height = "260px";
-      showQuote.style.display = "block";
-      quote.innerHTML = `<p class="lead quote pt-4"><i class="fa-solid fa-quote-left"></i> ${englishQuotes[randomQuotes].quote} <i class="fa-solid fa-quote-right"></i></p>`;
-      author.innerHTML = `<p class="lead author pb-4 mb-0"> ${englishQuotes[randomQuotes].author} </p>`;
-      console.log(randomQuotes);
+    showQuote.style.height = "260px";
+    showQuote.style.display = "block";
+    numOfQuote.innerHTML = randomQuotes
+    quote.innerHTML = `<p class="lead quote pt-4"><i class="fa-solid fa-quote-left"></i> ${englishQuotes[randomQuotes].quote} <i class="fa-solid fa-quote-right"></i></p>`;
+    author.innerHTML = `<p class="lead author pb-4 mb-0"> ${englishQuotes[randomQuotes].author} </p>`;
+    console.log(randomQuotes);
   } while (randomQuotes === lastNum);
   lastNum = randomQuotes;
 }

@@ -147,3 +147,15 @@ svg {
     transform: scale(1);
   }
 }
+
+.bookmark{
+  position: absolute;
+  width: fit-content;
+  right: 5%;
+  top: 0;
+  font-size: 22px;
+}
+
+.bookmark svg{
+  font-size: 35px;
+}
