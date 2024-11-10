@@ -3,7 +3,7 @@
     margin: 10px 0;
   }
 
-  svg {
+  p.quote svg {
     width: 100%;
     margin-bottom: 0px;
   }
@@ -28,7 +28,7 @@
     font-size: 19px;
   }
 
-  svg {
+  p.quote svg {
     font-size: 20px;
   }
 

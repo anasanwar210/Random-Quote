@@ -45,7 +45,8 @@ p {
   animation: fadeIn 1s ease-in-out, slideInFromRight 1s ease-in-out;
 }
 
-svg {
+p.quote svg,
+.bookmark svg {
   font-size: 26px;
   color: #e91e63;
   margin-bottom: 7px;
@@ -148,14 +149,14 @@ svg {
   }
 }
 
-.bookmark{
+.bookmark {
   position: absolute;
   width: fit-content;
-  right: 5%;
+  right: 7%;
   top: 0;
   font-size: 20px;
 }
 
-.bookmark svg{
+.bookmark svg {
   font-size: 35px;
 }
